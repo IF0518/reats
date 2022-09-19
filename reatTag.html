@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reats Tag</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keyword" content="publicview, publicviewkenya, views system, opinion"/>
+<meta name="description" content="This is a publicview system where you can give your view or opinion concerning government projects,budget,referadums and
+ other government operations"/>
+<style>
+body{     
+margin:15px;     
+border-style: solid;
+border-color: black;
+border-radius: 5px;
+position:relative;
+     }
+.container{
+width:98%;
+margin:12px auto 10px auto;
+height:auto;
+
+            }
+.container{
+width:95%;
+}
+}
+.reat{
+margin:2px auto 2px auto;
+text-align:left;
+top:10px;
+positon:absolute;
+color:blue;
+font-size:30px;
+}
+
+.topnav{
+overflow:hidden;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.topnav a:hover{
+color:blue;
+}
+
+.container2{
+background: #ddd;
+width:100%;
+height:760px;
+
+}
+.span{
+margin-top:20px;
+margin-left:20px;
+font-size:25px;
+}
+hr{
+margin:0px
+}
+.select{
+width:10%;
+border:none;
+padding:14px 16px;
+border-radius:4px;
+background-color: blue;
+float:right;
+margin-right:10px;
+margin-top:20px;
+
+}
+.selectUser{
+width:11%;
+border:none;
+float:right;
+padding:none;
+}
+
+.row {margin-top:40px;
+margin-left:20px;}
+.row:after{
+content:"";
+display:table;
+clear:both;
+}
+.col1{
+float:left;
+width:25%;
+padding:10px;
+}
+.col2{
+float:left;
+width:25%;
+padding:10px;
+}
+col3{
+float:left;
+width:35%;
+padding:10px;
+}
+#col3{
+float:right;
+margin-right:10px;
+}
+col4{
+width:80%;
+padding:10px:
+}
+
+.Colcontainer1{
+background:#e3f5d9;
+border:none;
+padding:15px;
+margin-top:10px;
+height:auto;
+}
+
+.Colcontainer{
+background:#f1f2f6;
+border:none;
+padding:15px;
+margin-top:10px;
+height:auto;
+}
+
+input[type=text]{
+margin-left:15px;
+width:10%;
+}
+select{
+margin-left:15px;
+width:10%;
+}
+input[type=submit]{
+background:green;
+float:right;
+margin-right:10px;
+width:10%;
+font-size:20px;
+}
+input[type=button]{
+float:right;
+margin-right:10px;
+width:10%;
+font-size:20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+</style>
+</head>
+<body class="container">
+<h2 class="reat" style="color:blue">Reats</h2>
+<div class="topnav">
+<a href="#">Home</a>
+<a href="#">Assets</a>
+<a href="#">RFID TAGS</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+<select class="selectUser">
+<option value="user1">Kristian Nyagwaswa</option>
+</select>
+</div>
+<hr>
+<div class="container2">
+<span class="span"><b>RFID Tags Overview &Anaysis</b></span>
+<select class="select" name="tag">
+<option value="tag1">Add Tag</options>
+</select>
+<div class="row">
+<div class="col1">
+<div class="Colcontainer1">
+<h2 style="font-size:40px">464,760</h2>
+<p>Active RFID Tags</p>
+</div>
+</div>
+<div class="col2">
+<div class="Colcontainer">
+<h2 style="font-size:40px">260</h2>
+<p>Active Decommissioned RFID Tags</p>
+</div>
+</div>
+<div class="col3">
+<div class="Colcontainer" id="col3">
+<input type="number" name="file" placeholder="Add Tag"/><br>
+<p>Upload Tags.CSVc</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col4" style="margin-right:10px">
+<div class="Colcontainer">
+<h2 style="font-size:20px; margin-left:15px">Search</h2>
+<form>
+<input type="text" name="tag" placeholder="Tag Id No">
+<input type="text" name="tag" placeholder="Barrel serial">
+<select>
+<option value="status">Status</option>
+</select>
+<select>
+<option value="location">Location</option>
+</select>
+<input type="submit" value="search"/>
+</form>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col4" style="margin-right:10px">
+<div class="Colcontainer">
+<span style="font-size:20px; margin-left:15px">RFID Tags Table</span>
+<input type="button" value="Export"/>
+<table>
+  <tr>
+    <th>No</th>
+    <th>Tag ID</th>
+  <th>Barrel serial No</th>
+<th>Date installed</th>
+<th>Last Location</th>
+<th>Status</th>
+<th>Action</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>FRO1311134</td>
+    <td>682924</td>
+<td>12/8/22</td>
+<td>Warehouse Entry</td>
+<td><span style="background:green; color:white">Active</span></td>
+<td><span style="background:blue; color:white">More</span></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>DGE5724892</td>
+    <td>823942</td>
+<td>3/6/21</td>
+<td>Yard</td>
+<td><span style="background:green; color:white">Active</span></td>
+<td><span style="background:blue; color:white">More</span></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>JHT0934501</td>
+    <td>949832</td>
+<td>8/4/22</td>
+<td>Decommissioning Yard</td>
+<td><span style="background:red; color:white">Decom..</span></td>
+<td><span style="background:blue; color:white">More</span></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>PKS0239428</td>
+    <td>524326</td>
+<td>19/5/22</td>
+<td>Warehouse Exit</td>
+<td><span style="background:green; color:white">Active</span></td>
+<td><span style="background:blue; color:white">More</span></td>
+  </tr>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</body> 
+</html>
